@@ -11,13 +11,7 @@
           :rep-provenance "https://www.etenders.gov.ie/"
           :corporate-number-owner-authority "Companies Registration Office / Revenue"
           :corporate-number-legal-basis "CRO number / tax reference"
-          :corporate-number-provenance "https://www.cro.ie/"}
-   "USA" {:name "United States" :owner-authority "GSA/SAM.gov" :legal-basis "FAR" :national-spec "SAM.gov" :provenance "https://sam.gov/"
-          :required-evidence ["EIN record" "SAM.gov registration record" "State business registration record" "SAM UEI verification record"]}
-   "GBR" {:name "United Kingdom" :owner-authority "CCS" :legal-basis "PA 2023" :national-spec "Find a Tender" :provenance "https://www.find-tender.service.gov.uk/"
-          :required-evidence ["Companies House number" "Find a Tender registration" "CH extract" "Authorized-representative record"]}
-   "NLD" {:name "Netherlands" :owner-authority "TenderNed" :legal-basis "Aanbestedingswet" :national-spec "TenderNed" :provenance "https://www.tenderned.nl/"
-          :required-evidence ["KvK extract" "TenderNed registration" "BTW record" "Authorized-representative record"]}})
+          :corporate-number-provenance "https://www.cro.ie/"}})
 
 (defn spec-basis [iso3] (get catalog iso3))
 (defn coverage
